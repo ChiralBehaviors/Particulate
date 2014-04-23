@@ -74,5 +74,10 @@ public class Particle {
     public void setAcceleration(PVector acceleration) {
         this.acceleration = acceleration;
     }
+    
+    public void step() {
+        velocity.add(acceleration);
+        location.add(velocity);
+    }
 
 }
